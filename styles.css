@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Khula&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&family=Shippori+Mincho&display=swap');
 
 * {
   box-sizing: border-box;
@@ -6,7 +6,7 @@
 
 body {
   color: #fff;
-  font-family: 'Khula', sans-serif;
+  font-family: 'Shippori Mincho', ;
   height: 100vh;
   overflow: hidden;
   margin: 0;
@@ -96,7 +96,8 @@ h1 {
 }
 
 .circle {
-  background: linear-gradient(90deg, #dfb866 20%, #dbb96e 40%, #a79344 100%);
+  /* If we want only one color without activating random colors via JS, we can set it here like: 
+  background: linear-gradient(90deg, #dfb866 20%, #dbb96e 40%, #a79344 100%); */
   position: absolute;
   border-radius: 50%;
   cursor: pointer;
