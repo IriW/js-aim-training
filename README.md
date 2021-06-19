@@ -7,4 +7,4 @@ The player can chose among several time options: 5s, 10s, 20, 30s and 40s. <br>
 One should klick as many circles as possible during the chosen time. <br>
 Circles appear in randomly chosen colors.<br><br>
 
-Planning to ad reset button soon :)
+Planning to add reset button soon :)
