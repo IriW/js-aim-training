@@ -106,14 +106,6 @@ function getRandomColor() {
    // return colors[Math.floor(Math.random() * colors.length)]
 }
 
-function goToStartBtn() {
-    let resetButton = document.createElement('button')
-    resetButton.innerHTML = 'Back to Start'
-    resetButton.classList.add('reset')
-    board.appendChild(resetButton)
-    resetButton.addEventListener('click', reload)
-}
-
 
 
 
