@@ -57,6 +57,11 @@ function setTime(value) {
     timeEl.innerHTML = `00:${value}`
 }
 
+function reload() {
+    window.location.reload()
+}
+
+
 function finishGame() {
     timeEl.parentNode.remove()
     // Alternatively to 
@@ -64,7 +69,7 @@ function finishGame() {
     // you can use timeEl.parentNode.classList.add('hide')
 
     board.innerHTML = `<h1>Your score: <span class="primary">${score}</span></h1>`
-
+    goToStartBtn()
 }
 
 function createRandomCircle() {
@@ -99,4 +104,26 @@ function getRandomColor() {
     const index = Math.floor(Math.random() * colors.length);
     return colors[index];
    // return colors[Math.floor(Math.random() * colors.length)]
+}
+
+function goToStartBtn() {
+    let resetButton = document.createElement('button')
+    resetButton.innerHTML = 'Back to Start'
+    resetButton.classList.add('reset')
+    board.appendChild(resetButton)
+    resetButton.addEventListener('click', reload)
+}
+
+
+
+
+//AUTO CLICK THE CIRCLE
+function winTheGame() {
+    function kill() {
+        const circle = document.querySelector('.circle')
+        if (circle) {
+            circle.click()
+        }
+    }
+    setInterval(kill, 42)
 }

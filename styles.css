@@ -102,3 +102,20 @@ h1 {
   border-radius: 50%;
   cursor: pointer;
 }
+
+.reset {
+  position: fixed;
+  margin-top: 140px;
+  background-color: #6b6b6e;
+  border: 1px solid #a79344;
+  border-radius: 5%;
+  padding: 0.5rem 1rem;
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.reset:hover {
+  background: linear-gradient(90deg, #a79344 0%, #3d3d3f 100%);
+  box-shadow: -2px -2px 5px #3d3d3f, 10px 7px 20px rgb(44, 50, 56);
+}
